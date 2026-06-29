@@ -1,0 +1,40 @@
+CI is simply
+
+Automatically checking your code every time you push it.
+
+Developer Push
+      ↓
+GitHub Actions
+      ↓
+Install Python
+      ↓
+Install packages
+      ↓
+Run tests
+      ↓
+If success → Merge
+If failure → Reject
+
+
+What is GitHub Actions?
+
+GitHub provides free servers.
+
+When you push code,
+
+GitHub creates a temporary computer.
+
+It runs your instructions.
+
+Then destroys that computer.
+
+You don't have to keep your own machine running.
+
+workflow can have multiple jobs.
+
+
+- name: Checkout code
+
+  uses: actions/checkout@v2
+  this step clones your repository onto the runner.
+
